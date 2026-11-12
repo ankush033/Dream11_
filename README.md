@@ -278,7 +278,7 @@ DugoutAI is structured for seamless cloud deployment:
 
 ### Step 2: Deploy Frontend on Netlify (from GitHub)
 1. Log in to [Netlify](https://app.netlify.com/) and click **Add new site** → **Import an existing project**.
-2. Authorize GitHub and select the **`Dream11`** repository (`ankush033/Dream11_`).
+2. Authorize GitHub and select the **`Dream11_`** repository (`ankush033/Dream11_`).
 3. Netlify automatically reads [`netlify.toml`](file:///d:/Dream11_/netlify.toml):
    - **Base directory:** `frontend`
    - **Build command:** `npm run build`
