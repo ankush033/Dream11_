@@ -265,8 +265,8 @@ DugoutAI is structured for seamless cloud deployment:
 
 ### Step 1: Deploy Backend API (Render / Railway)
 1. In [Render](https://render.com) or [Railway](https://railway.app), click **New** → **Blueprint** or **Web Service**.
-2. Select your GitHub repository: `https://github.com/ayussh176/Dream11.git`.
-3. If using Render, it automatically detects [`render.yaml`](file:///d:/Dream11/render.yaml).
+2. Select your GitHub repository: `https://github.com/ankush033/Dream11_.git`.
+3. If using Render, it automatically detects [`render.yaml`](file:///d:/Dream11_/render.yaml).
 4. Configure the following environment variables:
    - `DATABASE_URL`: `postgresql://neondb_owner:...@ep-fragrant-lake-behvhye3-pooler.c-9.us-east-2.aws.neon.tech/neondb?sslmode=require`
    - `GEMINI_API_KEY`: Your Google Gemini API Key
@@ -278,12 +278,12 @@ DugoutAI is structured for seamless cloud deployment:
 
 ### Step 2: Deploy Frontend on Netlify (from GitHub)
 1. Log in to [Netlify](https://app.netlify.com/) and click **Add new site** → **Import an existing project**.
-2. Authorize GitHub and select the **`Dream11`** repository (`ayussh176/Dream11`).
-3. Netlify automatically reads [`netlify.toml`](file:///d:/Dream11/netlify.toml):
+2. Authorize GitHub and select the **`Dream11`** repository (`ankush033/Dream11_`).
+3. Netlify automatically reads [`netlify.toml`](file:///d:/Dream11_/netlify.toml):
    - **Base directory:** `frontend`
    - **Build command:** `npm run build`
    - **Publish directory:** `dist`
 4. Under **Site configuration** → **Environment variables**, add:
    - `VITE_API_URL`: Your backend URL from Step 1 (e.g. `https://dugoutai-api.onrender.com/api`)
 5. Click **Deploy site**.
-6. Netlify builds the app, deploys it to a global CDN, and handles all client-side routing via [`public/_redirects`](file:///d:/Dream11/frontend/public/_redirects).
+6. Netlify builds the app, deploys it to a global CDN, and handles all client-side routing via [`public/_redirects`](file:///d:/Dream11_/frontend/public/_redirects).
